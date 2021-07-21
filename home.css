@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Indie+Flower&family=Patrick+Hand&family=Rock+Salt&family=Zeyada&display=swap');
+:root {
+    --rosado: #d40245;
+    --rosadoOscuro: #61001f;
+    --azul: #0063b4;
+    --azulOscuro: #002341;
+    --amarillo: #ff6a06;
+    --amarilloOscuro: #853500;
+}
+
+body {
+    height: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 10vw solid;
+    border-color: rgba(1, 8, 0, 0.993);
+    font-family: 'Annie Use Your Telescope';
+    background-color: #a1a1a1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23000000' fill-opacity='1'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.note {
+    font-family: 'Zeyada';
+    text-align: center;
+    width: 85px;
+    height: fit-content;
+    border: 2px solid;
+    border-top: transparent;
+}
+
+#navBar {
+    width: 60%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+#navBar a:hover {
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    text-decoration-line: underline;
+}
+
+#about {
+    background-color: var(--rosado);
+    border-color: var(--rosadoOscuro);
+}
+
+#projects {
+    background-color: var(--azul);
+    border-color: var(--azulOscuro);
+}
+
+#contact {
+    background-color: var(--amarillo);
+    border-color: var(--amarilloOscuro);
+}
+
+#mainDiv {
+    background-color: aliceblue;
+    position: relative;
+    top: 150px;
+    margin: auto;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    border: 10px double;
+}
+
+.text {
+    margin: 5px;
+    margin-top: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#name {
+    font-family: 'Rock Salt';
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+@media (max-width:425px) {
+    #mainDiv {
+        top: 100px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .note {
+        margin-right: 10px;
+    }
+    #navBar a {
+        font-size: 125%;
+    }
+}
+
+@media (max-width:768px) and (min-width:426px) {
+    #navBar a {
+        font-size: 175%;
+    }
+}
+
+@media(max-height:400px) {
+    #mainDiv {
+        top: 80px;
+    }
+}
+
+@media (min-height:750px) {
+    #mainDiv {
+        top: 200px;
+    }
+    .text {
+        font-size: 35px;
+    }
+}

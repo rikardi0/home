@@ -96,6 +96,9 @@ body {
     .text {
         font-size: 25px;
     }
+    body {
+        height: 638px;
+    }
 }
 
 @media (max-width:425px) {

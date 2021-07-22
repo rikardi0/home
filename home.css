@@ -92,6 +92,12 @@ body {
     margin-top: 0px;
 }
 
+@media (min-width:375px) {
+    .text {
+        font-size: 25px;
+    }
+}
+
 @media (max-width:425px) {
     #mainDiv {
         top: 100px;
@@ -116,14 +122,5 @@ body {
 @media(max-height:400px) {
     #mainDiv {
         top: 80px;
-    }
-}
-
-@media (min-height:750px) {
-    #mainDiv {
-        top: 200px;
-    }
-    .text {
-        font-size: 35px;
     }
 }

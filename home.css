@@ -8,15 +8,6 @@
     --amarilloOscuro: #853500;
 }
 
-html {
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    border-left: solid 65px;
-    border-color: rgb(0, 0, 0);
-}
-
 body {
     font-family: 'Annie Use Your Telescope';
     background-color: #a1a1a1;
